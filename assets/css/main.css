@@ -3401,7 +3401,7 @@ input, select, textarea {
 				-webkit-object-position: center;
 				-ms-object-position: center;
 				object-position: center; */
-				width: 55%;
+				width: 40%;
 			}
 
 		@media screen and (orientation: portrait) {
