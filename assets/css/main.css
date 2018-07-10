@@ -3392,15 +3392,15 @@ input, select, textarea {
 		}
 
 			#banner .image img {
-				height: 100%;
-				-moz-object-fit: cover;
+				max-height: 100%;
+				/* -moz-object-fit: cover;
 				-webkit-object-fit: cover;
 				-ms-object-fit: cover;
 				object-fit: cover;
 				-moz-object-position: center;
 				-webkit-object-position: center;
 				-ms-object-position: center;
-				object-position: center;
+				object-position: center; */
 				width: 55%;
 			}
 
