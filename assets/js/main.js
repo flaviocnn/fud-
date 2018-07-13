@@ -52,24 +52,7 @@
 
 	// Fixes.
 
-		// Object fit images.
-			if (!browser.canUse('object-fit')
-			||	browser.name == 'safari')
-				$('.image.object').each(function() {
-
-					var $this = $(this),
-						$img = $this.children('img');
-
-					// Hide original image.
-						$img.css('opacity', '0');
-
-					// Set background.
-						$this
-							.css('background-image', 'url("' + $img.attr('src') + '")')
-							.css('background-size', $img.css('object-fit') ? $img.css('object-fit') : 'cover')
-							.css('background-position', $img.css('object-position') ? $img.css('object-position') : 'center');
-
-				});
+	
 
 	// Sidebar.
 		var $sidebar = $('#sidebar'),
