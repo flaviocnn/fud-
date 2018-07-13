@@ -22,6 +22,8 @@
 			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
 		});
 
+		
+
 	// Stops animations/transitions until the page has ...
 
 		// ... loaded.
@@ -162,6 +164,12 @@
 						$sidebar.addClass('inactive');
 
 				});
+
+				// Scrolly links.
+		$('.scrolly').scrolly({
+			speed: 1000,
+			offset: -10
+		});
 
 		// Scroll lock.
 		// Note: If you do anything to change the height of the sidebar's content, be sure to

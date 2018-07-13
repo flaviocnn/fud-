@@ -1,6 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:300,700');
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -119,7 +118,7 @@ input, select, textarea {
 		color: #7f888f;
 		font-family: "Open Sans", sans-serif;
 		font-size: 13pt;
-		font-weight: 400;
+		font-weight: 300;
 		line-height: 1.65;
 	}
 
@@ -181,7 +180,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3d4449;
-		font-family: "Roboto Slab", serif;
+		font-family: 'Kaushan Script', cursive;
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -2988,6 +2987,7 @@ input, select, textarea {
 		width: 100%;
 	}
 
+	
 		#main > .inner {
 			padding: 0 6em 0.1em 6em ;
 			margin: 0 auto;
@@ -3038,7 +3038,77 @@ input, select, textarea {
 				}
 
 		}
-
+	.preview{
+			height: 100vh;
+			position: relative;
+			text-align: center;
+		}
+		.preview > .preview-cover{
+			background-image: url(../../images/bg.jpg);
+			height: inherit;
+			background-size: cover;
+		}
+		.preview-overlay {
+			position: absolute !important;
+			width: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			-moz-box-shadow: inset 0 0 10px #f6787821;
+			 -webkit-box-shadow: inset 0 0 10px #f6787821;
+			box-shadow: inset 0px 0px 300px 50px #f6787821;
+		}
+	.preview-cover .desc {
+		top: 60%;
+		position: absolute;
+		width: 100%;
+		margin-top: -80px;
+		z-index: 2;
+		color: #fff;
+		}
+		@media screen and (max-width: 768px) {
+		.preview-cover .desc {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		}
+		.preview-cover .desc h2 {
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 60px;
+		margin-bottom: 30px;
+		font-weight: 300 !important;
+		text-shadow: 1px 1px 10px #0000008c;
+		}
+		.preview-cover .desc h2 strong {
+		font-weight: 700;
+		}
+		@media screen and (max-width: 768px) {
+		.preview-cover .desc h2 {
+			font-size: 40px;
+		}
+		}
+		.preview-cover .desc span {
+		display: block;
+		margin-bottom: 30px;
+		letter-spacing: 1px;
+		}
+		.preview-cover .desc span a {
+		color: #fff;
+		}
+		.preview-cover .desc span a:hover, .preview-cover .desc span a:focus {
+		color: #fff !important;
+		}
+		.preview-cover .desc span a:hover.button, .preview-cover .desc span a:focus.button {
+		border: 2px solid #fff !important;
+		background: transparent !important;
+		}
+		.preview-cover .desc span a.preview-site-name {
+		padding-bottom: 2px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+		}
 /* Sidebar */
 
 	#search form {

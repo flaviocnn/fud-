@@ -13,6 +13,15 @@
 
 				<!-- Main -->
 					<div id="main">
+							<div class="preview">
+									<div class="preview-overlay"></div>
+									<div class="preview-cover" data-stellar-background-ratio="0.5">
+										<div class="desc animate-box">
+											<h2>Ciao, benvenuto su Fudì.</h2>
+											<a class="scrolly" href="#banner"><span class="fa fa-angle-double-down fa-5x"></span></a>
+										</div>
+									</div>
+							</div>
 						<div class="inner">
 
 							<!-- Header -->
@@ -231,6 +240,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src= "assets/js/jquery.scrolly.min.js"></script>
+			<script src= "../assets/js/jquery.scrollgress.min.js"></script>
+		<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});</script>
 	</body>
 </html>
