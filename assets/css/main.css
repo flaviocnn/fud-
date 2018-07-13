@@ -3044,7 +3044,8 @@ input, select, textarea {
 			text-align: center;
 		}
 		.preview > .preview-cover{
-			background-image: url(../../images/bg.jpg);
+			background: url(../../images/bg.jpg) center center no-repeat;
+			background-size: auto auto;
 			height: inherit;
 			background-size: cover;
 		}
